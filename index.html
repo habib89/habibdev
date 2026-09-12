@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Asmaul Habib | IT Developer & Freelancer</title>
+    <meta name="description" content="Freelance IT developer. Website, GPS tracking, database, API, server, and AI automation — online & remote.">
+    <link rel="stylesheet" href="styles.css?v=6">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;/&gt;</span><span class="logo-name">Asmaul<span class="logo-name-dot">.</span>Habib</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#services" class="nav-link"><span data-lang="en">Services</span><span data-lang="id">Layanan</span></a>
+                <a href="#portfolio" class="nav-link"><span data-lang="en">Portfolio</span><span data-lang="id">Portofolio</span></a>
+                <a href="#order" class="nav-link"><span data-lang="en">How to Order</span><span data-lang="id">Cara Pesan</span></a>
+                <a href="#contact" class="nav-link cta-nav"><span data-lang="en">Start Project</span><span data-lang="id">Mulai Proyek</span></a>
+            </div>
+            <div class="nav-actions">
+                <div class="lang-toggle" id="langToggle">
+                    <button class="lang-btn active" data-lang-btn="en" aria-label="English">EN</button>
+                    <button class="lang-btn" data-lang-btn="id" aria-label="Bahasa Indonesia">ID</button>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="grid-pattern"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <div class="hero-badge animate-fade-in">
+                        <span class="badge-dot"></span>
+                        <span data-lang="en">Available for daily & freelance IT jobs</span>
+                        <span data-lang="id">Terima pekerjaan IT harian & freelance</span>
+                    </div>
+                    <h1 class="hero-title animate-fade-in-up">
+                        <span class="hero-greeting"><span data-lang="en">Hi, I'm</span><span data-lang="id">Halo, saya</span></span>
+                        <span class="hero-name">M. Asmaul Habib</span>
+                        <span class="hero-role">
+                            <span class="typed-text" id="typedText"></span>
+                            <span class="cursor">|</span>
+                        </span>
+                    </h1>
+                    <p class="hero-description animate-fade-in-up delay-1">
+                        <span data-lang="en">Need IT help? I provide <strong>online, remote, and flexible</strong> services — from websites, systems, and databases to GPS tracking, APIs, servers, and AI agents.</span>
+                        <span data-lang="id">Butuh bantuan IT? Saya siap membantu <strong>secara online, remote, dan fleksibel</strong> — mulai dari website, sistem, database, GPS tracking, API, server, hingga AI agent.</span>
+                    </p>
+                    <div class="hero-cta animate-fade-in-up delay-2">
+                        <a href="#contact" class="btn btn-primary">
+                            <span data-lang="en">Start Your Project</span><span data-lang="id">Mulai Proyek</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#portfolio" class="btn btn-secondary">
+                            <i class="fas fa-eye"></i>
+                            <span data-lang="en">View Portfolio</span><span data-lang="id">Lihat Portofolio</span>
+                        </a>
+                    </div>
+                    <div class="hero-support animate-fade-in-up delay-3">
+                        <span class="support-chip"><i class="fas fa-check-circle"></i><span data-lang="en">Small jobs accepted</span><span data-lang="id">Pekerjaan kecil diterima</span></span>
+                        <span class="support-chip"><i class="fas fa-check-circle"></i><span data-lang="en">Remote ready</span><span data-lang="id">Siap remote</span></span>
+                        <span class="support-chip"><i class="fas fa-check-circle"></i><span data-lang="en">Per task or daily</span><span data-lang="id">Per tugas atau harian</span></span>
+                        <span class="support-chip"><i class="fas fa-check-circle"></i><span data-lang="en">Free consultation</span><span data-lang="id">Konsultasi gratis</span></span>
+                    </div>
+                    <div class="hero-stats animate-fade-in-up delay-3">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label"><span data-lang="en">Projects Done</span><span data-lang="id">Proyek Selesai</span></span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="30">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label"><span data-lang="en">Happy Clients</span><span data-lang="id">Klien Puas</span></span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label"><span data-lang="en">Years Experience</span><span data-lang="id">Tahun Pengalaman</span></span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+                            <span class="stat-label"><span data-lang="en">Deadline on Time</span><span data-lang="id">Tepat Waktu</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual animate-fade-in-up delay-2">
+                    <div class="character-card">
+                        <div class="character-badge">
+                            <span class="status-dot"></span>
+                            <span data-lang="en">Ready to Help</span><span data-lang="id">Siap Membantu</span>
+                        </div>
+                        <div class="code-bubble bubble-1">&lt;/&gt;</div>
+                        <div class="code-bubble bubble-2">{ }</div>
+                        <div class="code-bubble bubble-3">🤖</div>
+
+                        <!-- Big animated IT Developer character -->
+                        <svg class="character" viewBox="0 0 280 270" role="img" aria-label="Animated IT developer cartoon">
+                            <!-- Blob / backdrop -->
+                            <path d="M140 12 C 220 12 268 62 268 142 C 268 225 214 258 140 258 C 66 258 12 225 12 142 C 12 62 60 12 140 12 Z" fill="rgba(52,211,153,0.10)"/>
+                            <!-- Torso hoodie -->
+                            <path d="M116 132 L164 132 L176 184 Q172 190 160 190 L120 190 Q108 190 104 184 Z" fill="#10b981"/>
+                            <path d="M116 128 Q140 108 164 128 L164 144 Q140 128 116 144 Z" fill="#059669"/>
+                            <!-- Neck -->
+                            <rect x="133" y="120" width="14" height="18" rx="5" fill="#f0b98c"/>
+                            <!-- Head -->
+                            <circle cx="140" cy="88" r="44" fill="#ffd9b3"/>
+                            <!-- Hair -->
+                            <path d="M96 88 a44 44 0 0 1 88 0 z" fill="#163326"/>
+                            <path d="M102 86 q16 -22 38 -18 t38 18 q-14 -15 -38 -15 t-38 15 z" fill="#163326"/>
+                            <!-- Blush -->
+                            <circle cx="114" cy="102" r="6" fill="#f7b26b" opacity="0.55"/>
+                            <circle cx="166" cy="102" r="6" fill="#f7b26b" opacity="0.55"/>
+                            <!-- Eyes blink -->
+                            <circle cx="126" cy="86" r="5" fill="#163326">
+                                <animate attributeName="r" values="5;5;5;0.8;0.8;5" keyTimes="0;0.88;0.9;0.93;0.96;1" dur="3.6s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="154" cy="86" r="5" fill="#163326">
+                                <animate attributeName="r" values="5;5;5;0.8;0.8;5" keyTimes="0;0.88;0.9;0.93;0.96;1" dur="3.6s" repeatCount="indefinite"/>
+                            </circle>
+                            <!-- Glasses -->
+                            <rect x="101" y="79" width="22" height="17" rx="6" fill="none" stroke="#163326" stroke-width="2.4"/>
+                            <rect x="157" y="79" width="22" height="17" rx="6" fill="none" stroke="#163326" stroke-width="2.4"/>
+                            <path d="M123 86 q17 6 34 0" stroke="#163326" stroke-width="2.4" fill="none"/>
+                            <!-- Smile -->
+                            <path d="M128 106 q12 11 24 0" stroke="#ad5f2a" stroke-width="3.6" fill="none" stroke-linecap="round"/>
+                            <!-- Sparkles -->
+                            <g>
+                                <path d="M196 52 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z" fill="#fbbf24">
+                                    <animate attributeName="opacity" values="0.2;1;0.2" dur="2.2s" repeatCount="indefinite"/>
+                                </path>
+                                <path d="M84 48 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#fbbf24">
+                                    <animate attributeName="opacity" values="1;0.2;1" dur="2.6s" repeatCount="indefinite"/>
+                                </path>
+                            </g>
+                            <!-- Laptop -->
+                            <rect x="84" y="180" width="112" height="60" rx="9" fill="#0b3927"/>
+                            <rect x="95" y="193" width="30" height="6" rx="3" fill="#34d399"/>
+                            <rect x="95" y="205" width="50" height="6" rx="3" fill="#4ade80"/>
+                            <rect x="95" y="217" width="38" height="6" rx="3" fill="#34d399"/>
+                            <circle cx="180" cy="208" r="5" fill="#4ade80" opacity="0.9"/>
+                            <path d="M60 240 h160 l-13 16 h-134 z" fill="#0d432b"/>
+                            <!-- Right arm typing -->
+                            <path d="M168 144 q26 16 20 64" stroke="#10b981" stroke-width="15" fill="none" stroke-linecap="round"/>
+                            <circle cx="188" cy="212" r="10" fill="#ffd9b3"/>
+                            <!-- Left arm waving -->
+                            <g>
+                                <animateTransform attributeName="transform" type="rotate" values="0 110 148;-16 110 148;8 110 148;-12 110 148;0 110 148" dur="2.2s" repeatCount="indefinite"/>
+                                <path d="M114 142 q-34 4 -46 26" stroke="#10b981" stroke-width="15" fill="none" stroke-linecap="round"/>
+                                <circle cx="66" cy="176" r="10" fill="#ffd9b3"/>
+                            </g>
+                            <!-- Coffee mug -->
+                            <rect x="212" y="162" width="26" height="28" rx="6" fill="#f59e0b"/>
+                            <path d="M238 168 q12 2 12 13 q0 11 -12 13" stroke="#f59e0b" stroke-width="5.5" fill="none"/>
+                            <!-- Steam -->
+                            <path d="M222 156 q3 -7 -1 -12 q3 -7 -1 -13" stroke="#9ca3af" stroke-width="3.4" fill="none" stroke-linecap="round" opacity="0.7">
+                                <animate attributeName="opacity" values="0.15;0.8;0.15" dur="1.8s" repeatCount="indefinite"/>
+                            </path>
+                            <path d="M230 156 q3 -7 -1 -12" stroke="#9ca3af" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6">
+                                <animate attributeName="opacity" values="0.8;0.15;0.8" dur="2.2s" repeatCount="indefinite"/>
+                            </path>
+                        </svg>
+
+                        <div class="character-chips">
+                            <span class="chip"><i class="fab fa-python"></i> Python</span>
+                            <span class="chip"><i class="fas fa-earth-asia"></i> Laravel</span>
+                            <span class="chip"><i class="fas fa-database"></i> PostgreSQL</span>
+                            <span class="chip"><i class="fab fa-docker"></i> Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"><div class="wheel"></div></div>
+            <span>SCROLL</span>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><span data-lang="en">Services</span><span data-lang="id">Layanan</span></span>
+                <h2 class="section-title"><span data-lang="en">IT Services I Accept</span><span data-lang="id">Jasa IT yang Saya Terima</span></h2>
+                <p class="section-subtitle"><span data-lang="en">Remote, per-task, daily, or per-project. Small jobs welcome.</span><span data-lang="id">Remote, per tugas, harian, atau per proyek. Pekerjaan kecil pun diterima.</span></p>
+            </div>
+            <div class="services-grid">
+
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">🌐</div>
+                    <h3><span data-lang="en">Website Development</span><span data-lang="id">Pembuatan Website</span></h3>
+                    <p class="service-desc"><span data-lang="en">Fast, professional websites that help your business grow.</span><span data-lang="id">Website cepat dan profesional yang membantu bisnis Anda bertumbuh.</span></p>
+                    <div class="tag-grid">
+                        <span class="tag">Company Profile</span><span class="tag" data-lang="id">Profil Perusahaan</span>
+                        <span class="tag">Landing Page</span>
+                        <span class="tag" data-lang="en">Online Store</span><span class="tag" data-lang="id">Toko Online</span>
+                        <span class="tag" data-lang="en">Admin Dashboard</span><span class="tag" data-lang="id">Dashboard Admin</span>
+                        <span class="tag" data-lang="en">CRM</span><span class="tag" data-lang="id">Sistem CRM</span>
+                        <span class="tag" data-lang="en">Custom Website</span><span class="tag" data-lang="id">Website Custom</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">📍</div>
+                    <h3><span data-lang="en">GPS & Monitoring</span><span data-lang="id">GPS & Monitoring</span></h3>
+                    <p class="service-desc"><span data-lang="en">Real-time vehicle and fleet tracking systems.</span><span data-lang="id">Sistem tracking kendaraan & armada secara real-time.</span></p>
+                    <div class="tag-grid">
+                        <span class="tag">GPS Tracking</span>
+                        <span class="tag" data-lang="en">Fleet Monitoring</span><span class="tag" data-lang="id">Monitoring Armada</span>
+                        <span class="tag" data-lang="en">Vehicle Tracking</span><span class="tag" data-lang="id">Tracking Kendaraan</span>
+                        <span class="tag" data-lang="en">Tracking API</span>
+                        <span class="tag" data-lang="en">Location & Telemetry</span><span class="tag" data-lang="id">Lokasi & Telemetry</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">⚙️</div>
+                    <h3><span data-lang="en">Backend & API</span><span data-lang="id">Backend & API</span></h3>
+                    <p class="service-desc"><span data-lang="en">Clean, scalable backend, APIs, and integrations.</span><span data-lang="id">Backend yang bersih, scalable, API, dan integrasi.</span></p>
+                    <div class="tag-grid">
+                        <span class="tag">Python</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">Laravel</span>
+                        <span class="tag">REST API</span>
+                        <span class="tag" data-lang="en">API Integration</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">🗄️</div>
+                    <h3><span data-lang="en">Database</span><span data-lang="id">Database</span></h3>
+                    <p class="service-desc"><span data-lang="en">Reliable design, migration, and optimization.</span><span data-lang="id">Desain, migrasi, dan optimasi yang andal.</span></p>
+                    <div class="tag-grid">
+                        <span class="tag">MySQL</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag" data-lang="en">Database Design</span><span class="tag" data-lang="id">Desain Database</span>
+                        <span class="tag" data-lang="en">Query Optimization</span><span class="tag" data-lang="id">Optimasi Query</span>
+                        <span class="tag" data-lang="en">Data Migration</span><span class="tag" data-lang="id">Migrasi Data</span>
+                        <span class="tag" data-lang="en">Backup & Restore</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">🖥️</div>
+                    <h3><span data-lang="en">Server & Hosting</span><span data-lang="id">Server & Hosting</span></h3>
+                    <p class="service-desc"><span data-lang="en">Server setup, deployment, and troubleshooting.</span><span data-lang="id">Setup server, deployment, dan troubleshooting.</span></p>
+                    <div class="tag-grid">
+                        <span class="tag">Linux / Ubuntu</span>
+                        <span class="tag">VPS</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Nginx</span>
+                        <span class="tag">Gunicorn</span>
+                        <span class="tag">cPanel</span>
+                        <span class="tag" data-lang="en">Website Deployment</span><span class="tag" data-lang="id">Deployment Website</span>
+                        <span class="tag" data-lang="en">Server Troubleshooting</span><span class="tag" data-lang="id">Troubleshooting Server</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">🤖</div>
+                    <h3><span data-lang="en">AI & Automation</span><span data-lang="id">AI & Otomatisasi</span></h3>
+                    <p class="service-desc"><span data-lang="en">AI agents and automation that save your time.</span><span data-lang="id">AI agent dan otomatisasi yang menghemat waktu Anda.</span></p>
+                    <div class="tag-grid">
+                        <span class="tag">AI Chatbot</span>
+                        <span class="tag">AI Agent</span>
+                        <span class="tag">Agentic AI</span>
+                        <span class="tag" data-lang="en">Automation</span><span class="tag" data-lang="id">Otomatisasi</span>
+                        <span class="tag" data-lang="en">AI + API Integration</span><span class="tag" data-lang="id">Integrasi AI + API</span>
+                        <span class="tag" data-lang="en">Business Automation</span><span class="tag" data-lang="id">Otomatisasi Bisnis</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><span data-lang="en">Portfolio</span><span data-lang="id">Portofolio</span></span>
+                <h2 class="section-title"><span data-lang="en">Project Highlights</span><span data-lang="id">Proyek Unggulan</span></h2>
+                <p class="section-subtitle"><span data-lang="en">Real projects I've built with dedication.</span><span data-lang="id">Proyek nyata yang saya kerjakan dengan dedikasi.</span></p>
+            </div>
+            <div class="portfolio-grid">
+
+                <div class="portfolio-card">
+                    <div class="portfolio-cover">
+                        <img src="assets/portfolio-4.png" alt="GPS Tracking System" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://wa.me/6280000000000?text=Halo%20Habib%2C%20saya%20tertarik%20dengan%20proyek%20GPS%20Tracking%20System%20Anda" class="portfolio-action wa-action" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="mailto:habib@freelancer.com?subject=Tertarik%20dengan%20proyek%20GPS%20Tracking" class="portfolio-action mail-action" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">GPS Tracking</span>
+                        <h3><span data-lang="en">GPS Tracking System</span><span data-lang="id">Sistem GPS Tracking</span></h3>
+                        <p><span data-lang="en">Real-time vehicle tracking & fleet monitoring system.</span><span data-lang="id">Sistem tracking kendaraan & monitoring armada real-time.</span></p>
+                        <div class="portfolio-result"><i class="fas fa-check-circle"></i> Live GPS · Trip History · Telemetry</div>
+                        <div class="portfolio-tech">
+                            <span>Python</span><span>Django/FastAPI</span><span>Vue.js</span><span>PostgreSQL</span><span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-cover">
+                        <img src="assets/portfolio-5.png" alt="Online Shop" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://wa.me/6280000000000?text=Halo%20Habib%2C%20saya%20tertarik%20dengan%20proyek%20Online%20Shop%20Anda" class="portfolio-action wa-action" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="mailto:habib@freelancer.com?subject=Tertarik%20dengan%20proyek%20Online%20Shop" class="portfolio-action mail-action" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">E-Commerce</span>
+                        <h3><span data-lang="en">Online Shop</span><span data-lang="id">Toko Online</span></h3>
+                        <p><span data-lang="en">Online store with product & order management.</span><span data-lang="id">Toko online dengan pengelolaan produk & pesanan.</span></p>
+                        <div class="portfolio-result"><i class="fas fa-check-circle"></i> Cart · Checkout · Admin</div>
+                        <div class="portfolio-tech">
+                            <span>Laravel/PHP</span><span>Vue.js</span><span>MySQL/PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-cover">
+                        <img src="assets/portfolio-2.png" alt="CRM System" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://wa.me/6280000000000?text=Halo%20Habib%2C%20saya%20tertarik%20dengan%20proyek%20CRM%20System%20Anda" class="portfolio-action wa-action" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="mailto:habib@freelancer.com?subject=Tertarik%20dengan%20proyek%20CRM" class="portfolio-action mail-action" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">CRM</span>
+                        <h3><span data-lang="en">CRM System</span><span data-lang="id">Sistem CRM</span></h3>
+                        <p><span data-lang="en">System to manage customers & business activities.</span><span data-lang="id">Sistem untuk mengelola customer & aktivitas bisnis.</span></p>
+                        <div class="portfolio-result"><i class="fas fa-check-circle"></i> Leads · Pipeline · Reporting</div>
+                        <div class="portfolio-tech">
+                            <span>Laravel/PHP</span><span>Vue.js</span><span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-cover">
+                        <img src="assets/portfolio-1.png" alt="Business Dashboard" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://wa.me/6280000000000?text=Halo%20Habib%2C%20saya%20tertarik%20dengan%20proyek%20Business%20Dashboard%20Anda" class="portfolio-action wa-action" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="mailto:habib@freelancer.com?subject=Tertarik%20dengan%20proyek%20Dashboard" class="portfolio-action mail-action" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Dashboard</span>
+                        <h3><span data-lang="en">Business Dashboard</span><span data-lang="id">Dashboard Bisnis</span></h3>
+                        <p><span data-lang="en">Real-time dashboard for your business data.</span><span data-lang="id">Dashboard real-time untuk data bisnis Anda.</span></p>
+                        <div class="portfolio-result"><i class="fas fa-check-circle"></i> Charts · Reports · Filters</div>
+                        <div class="portfolio-tech">
+                            <span>React/Vue</span><span>REST API</span><span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-cover">
+                        <img src="assets/portfolio-6.png" alt="AI Agentic E-Commerce" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://wa.me/6280000000000?text=Halo%20Habib%2C%20saya%20tertarik%20dengan%20AI%20Agentic%20E-Commerce%20Anda" class="portfolio-action wa-action" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="mailto:habib@freelancer.com?subject=Tertarik%20dengan%20proyek%20AI%20E-Commerce" class="portfolio-action mail-action" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">AI Agent</span>
+                        <h3><span data-lang="en">AI Agentic E-Commerce</span><span data-lang="id">AI Agentic E-Commerce</span></h3>
+                        <p><span data-lang="en">AI agent that answers customers & runs ops.</span><span data-lang="id">AI agent yang menjawab customer & menjalankan operasional.</span></p>
+                        <div class="portfolio-result"><i class="fas fa-check-circle"></i> AI Chat · Stock · Content</div>
+                        <div class="portfolio-tech">
+                            <span>Python</span><span>OpenAI API</span><span>FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-cover">
+                        <img src="assets/portfolio-3.png" alt="API Integration" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://wa.me/6280000000000?text=Halo%20Habib%2C%20saya%20tertarik%20dengan%20jasa%20API%20Integration%20Anda" class="portfolio-action wa-action" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="mailto:habib@freelancer.com?subject=Tertarik%20dengan%20jasa%20API" class="portfolio-action mail-action" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">API</span>
+                        <h3><span data-lang="en">API Integration</span><span data-lang="id">Integrasi API</span></h3>
+                        <p><span data-lang="en">Connecting systems through APIs & webhooks.</span><span data-lang="id">Menghubungkan sistem melalui API & webhook.</span></p>
+                        <div class="portfolio-result"><i class="fas fa-check-circle"></i> Payment · WhatsApp · GPS</div>
+                        <div class="portfolio-tech">
+                            <span>REST API</span><span>Webhook</span><span>Python/Laravel</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW TO ORDER -->
+    <section class="section order" id="order">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><span data-lang="en">How to Order</span><span data-lang="id">Cara Pesan</span></span>
+                <h2 class="section-title"><span data-lang="en">No time for IT work? Send it to me.</span><span data-lang="id">Tidak punya waktu untuk urusan IT? Kirim ke saya.</span></h2>
+                <p class="section-subtitle"><span data-lang="en">Accepting daily, per-task, and per-project jobs — small jobs welcome too, no need to wait for a big project.</span><span data-lang="id">Terima pekerjaan harian, per tugas, maupun per proyek — pekerjaan kecil pun diterima, tidak perlu menunggu proyek besar.</span></p>
+            </div>
+            <div class="order-grid">
+                <div class="order-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-paper-plane"></i></div>
+                        <h3><span data-lang="en">Send Your Task</span><span data-lang="id">Kirim Pekerjaan</span></h3>
+                        <p><span data-lang="en">Send the description, screenshot/error, target, and deadline.</span><span data-lang="id">Kirim deskripsi, screenshot/error, target, dan deadline.</span></p>
+                    </div>
+                </div>
+                <div class="order-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-comments"></i></div>
+                        <h3><span data-lang="en">Free Consultation</span><span data-lang="id">Konsultasi Gratis</span></h3>
+                        <p><span data-lang="en">I review the details and give you a solution and estimate.</span><span data-lang="id">Saya cek detail dan beri solusi serta estimasi.</span></p>
+                    </div>
+                </div>
+                <div class="order-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3><span data-lang="en">I Do the Work</span><span data-lang="id">Saya Kerjakan</span></h3>
+                        <p><span data-lang="en">Remote. Daily, per-task, or per-project. Regular progress updates.</span><span data-lang="id">Remote. Harian, per tugas, atau per proyek. Update progress berkala.</span></p>
+                    </div>
+                </div>
+                <div class="order-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-rocket"></i></div>
+                        <h3><span data-lang="en">Delivered & Done</span><span data-lang="id">Selesai & Terima</span></h3>
+                        <p><span data-lang="en">You review, approve, and pay after you're satisfied.</span><span data-lang="id">Anda review, setujui, dan bayar setelah puas.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band">
+        <div class="cta-bg">
+            <div class="gradient-orb orb-cta-1"></div>
+            <div class="gradient-orb orb-cta-2"></div>
+        </div>
+        <div class="container">
+            <h2><span data-lang="en">Got a job that's stuck? Send the details now.</span><span data-lang="id">Ada pekerjaan yang tertunda? Kirim detailnya sekarang.</span></h2>
+            <p><span data-lang="en">Small jobs, urgent fixes, full projects — I'll help you get it done.</span><span data-lang="id">Pekerjaan kecil, perbaikan mendesak, proyek penuh — saya bantu selesaikan.</span></p>
+            <a href="https://wa.me/6280000000000?text=Halo%20Habib!%20Saya%20ingin%20diskusi%20pekerjaan%20IT." class="btn btn-primary btn-lg" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span data-lang="en">Chat to Discuss</span><span data-lang="id">Chat untuk Diskusi</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><span data-lang="en">Contact</span><span data-lang="id">Kontak</span></span>
+                <h2 class="section-title"><span data-lang="en">Let's Work Together</span><span data-lang="id">Mari Bekerja Sama</span></h2>
+                <p class="section-subtitle"><span data-lang="en">Need a website, database, API, server, or AI agent? Send your details and get an estimate within 24 hours.</span><span data-lang="id">Butuh website, database, API, server, atau AI agent? Kirim detailnya dan dapatkan estimasi dalam 24 jam.</span></p>
+            </div>
+
+            <div class="contact-chips">
+                <a class="contact-chip" href="mailto:habib@freelancer.com">
+                    <i class="fas fa-envelope"></i>
+                    <span>habib@freelancer.com</span>
+                </a>
+                <a class="contact-chip" href="https://wa.me/6280000000000" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>+62 8XX-XXXX-XXXX</span>
+                </a>
+                <div class="contact-chip">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span data-lang="en">Indonesia (Remote)</span><span data-lang="id">Indonesia (Remote)</span>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name"><span data-lang="en">Your Name</span><span data-lang="id">Nama Anda</span></label>
+                        <input type="text" id="name" name="name" required
+                            data-ph-en="e.g. Rina" data-ph-id="cth: Rina">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email"><span data-lang="en">Email / WhatsApp</span><span data-lang="id">Email / WhatsApp</span></label>
+                            <input type="text" id="email" name="email" required
+                                data-ph-en="rina@mail.com" data-ph-id="rina@mail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="service"><span data-lang="en">Service Needed</span><span data-lang="id">Layanan Dibutuhkan</span></label>
+                            <select id="service" name="service" required>
+                                <option value="" data-lang="en">Select a service</option>
+                                <option value="" data-lang="id">Pilih layanan</option>
+                                <option value="web" data-lang="en">Website / System</option>
+                                <option value="web" data-lang="id">Website / Sistem</option>
+                                <option value="gps" data-lang="en">GPS / Monitoring</option>
+                                <option value="gps" data-lang="id">GPS / Monitoring</option>
+                                <option value="backend" data-lang="en">Backend / API</option>
+                                <option value="backend" data-lang="id">Backend / API</option>
+                                <option value="db" data-lang="en">Database</option>
+                                <option value="db" data-lang="id">Database</option>
+                                <option value="server" data-lang="en">Server / Hosting</option>
+                                <option value="server" data-lang="id">Server / Hosting</option>
+                                <option value="ai" data-lang="en">AI / Automation</option>
+                                <option value="ai" data-lang="id">AI / Otomatisasi</option>
+                                <option value="other" data-lang="en">Other</option>
+                                <option value="other" data-lang="id">Lainnya</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message"><span data-lang="en">Describe Your Task</span><span data-lang="id">Ceritakan Pekerjaan Anda</span></label>
+                        <textarea id="message" name="message" rows="4" required
+                            data-ph-en="Task description, error screenshot, target, deadline..."
+                            data-ph-id="Deskripsi pekerjaan, screenshot error, target, deadline..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span data-lang="en">Send & Get Free Estimate</span><span data-lang="id">Kirim & Dapatkan Estimasi Gratis</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/6280000000000?text=Halo%20Habib!%20Saya%20melihat%20portofolio%20Anda%20dan%20tertarik%20untuk%20berkolaborasi." class="floating-wa" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="wa-tooltip">WhatsApp</span>
+        <span class="wa-ping"></span>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#hero" class="nav-logo">
+                        <span class="logo-bracket">&lt;/&gt;</span><span class="logo-name">Asmaul<span class="logo-name-dot">.</span>Habib</span>
+                    </a>
+                    <p><span data-lang="en">IT Developer & Freelance Digital Solution. Websites, GPS, databases, APIs, servers, and AI — done remotely.</span><span data-lang="id">IT Developer & Freelance Solusi Digital. Website, GPS, database, API, server, dan AI — dikerjakan secara remote.</span></p>
+                </div>
+                <div class="footer-links">
+                    <h4><span data-lang="en">Navigation</span><span data-lang="id">Navigasi</span></h4>
+                    <a href="#services"><span data-lang="en">Services</span><span data-lang="id">Layanan</span></a>
+                    <a href="#portfolio"><span data-lang="en">Portfolio</span><span data-lang="id">Portofolio</span></a>
+                    <a href="#order"><span data-lang="en">How to Order</span><span data-lang="id">Cara Pesan</span></a>
+                    <a href="#contact"><span data-lang="en">Contact</span><span data-lang="id">Kontak</span></a>
+                </div>
+                <div class="footer-links">
+                    <h4><span data-lang="en">Ready to Start?</span><span data-lang="id">Siap Memulai?</span></h4>
+                    <a href="#contact"><span data-lang="en">Free consultation</span><span data-lang="id">Konsultasi gratis</span></a>
+                    <a href="https://wa.me/6280000000000" target="_blank">WhatsApp</a>
+                    <a href="mailto:habib@freelancer.com">Email</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 M. Asmaul Habib. <span data-lang="en">Made with</span><span data-lang="id">Dibuat dengan</span> <span class="heart">&hearts;</span> <span data-lang="en">and coffee.</span><span data-lang="id">dan kopi.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js?v=6"></script>
+</body>
+</html>
