@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M. Asmaul Habib | IT Developer & Freelancer</title>
     <meta name="description" content="Freelance IT developer. Website, GPS tracking, database, API, server, and AI automation — online & remote.">
-    <link rel="stylesheet" href="styles.css?v=6">
+    <link rel="stylesheet" href="styles.css?v=10">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -22,6 +22,7 @@
                 <span class="logo-bracket">&lt;/&gt;</span><span class="logo-name">Asmaul<span class="logo-name-dot">.</span>Habib</span>
             </a>
             <div class="nav-links" id="navLinks">
+                <a href="#journey" class="nav-link"><span data-lang="en">Journey</span><span data-lang="id">Perjalanan</span></a>
                 <a href="#services" class="nav-link"><span data-lang="en">Services</span><span data-lang="id">Layanan</span></a>
                 <a href="#portfolio" class="nav-link"><span data-lang="en">Portfolio</span><span data-lang="id">Portofolio</span></a>
                 <a href="#order" class="nav-link"><span data-lang="en">How to Order</span><span data-lang="id">Cara Pesan</span></a>
@@ -115,6 +116,14 @@
                             <span class="status-dot"></span>
                             <span data-lang="en">Ready to Help</span><span data-lang="id">Siap Membantu</span>
                         </div>
+                        <div class="code-editor" aria-hidden="true">
+                            <div class="code-editor-bar">
+                                <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+                                <span class="code-file" id="codeFile">monitor.py</span>
+                                <span class="code-status"><i></i>typing…</span>
+                            </div>
+                            <div class="code-body" id="codeBody"></div>
+                        </div>
                         <div class="code-bubble bubble-1">&lt;/&gt;</div>
                         <div class="code-bubble bubble-2">{ }</div>
                         <div class="code-bubble bubble-3">🤖</div>
@@ -199,6 +208,112 @@
         <div class="scroll-indicator">
             <div class="mouse"><div class="wheel"></div></div>
             <span>SCROLL</span>
+        </div>
+    </section>
+
+    <!-- CAREER JOURNEY -->
+    <section class="section journey" id="journey">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><span data-lang="en">Career Journey</span><span data-lang="id">Perjalanan Karir</span></span>
+                <h2 class="section-title"><span data-lang="en">From Zero to Freelance Engineer</span><span data-lang="id">Dari Nol Sampai Freelance Engineer</span></h2>
+                <p class="section-subtitle"><span data-lang="en">Every level was unlocked by solving real problems. Scroll to follow the journey.</span><span data-lang="id">Setiap level terbuka karena menyelesaikan masalah nyata. Scroll untuk mengikuti perjalanannya.</span></p>
+            </div>
+
+            <!-- Level HUD -->
+            <div class="journey-hud" id="journeyHud">
+                <div class="hud-level">
+                    <span class="hud-label">LEVEL</span>
+                    <span class="hud-level-num" id="hudLevel">0</span>
+                </div>
+                <div class="hud-main">
+                    <div class="hud-title" id="hudTitle">Zero</div>
+                    <div class="hud-bar"><div class="hud-bar-fill" id="hudBar"></div></div>
+                </div>
+                <div class="hud-year">
+                    <span class="hud-label">YEAR</span>
+                    <span class="hud-year-num" id="hudYear">2020</span>
+                </div>
+            </div>
+
+            <div class="journey-track" id="journeyTrack">
+                <div class="journey-line"><div class="journey-line-fill" id="journeyFill"></div></div>
+                <div class="journey-traveler" id="journeyTraveler" aria-hidden="true">
+                    <span class="traveler-icon">🧑‍💻</span>
+                    <span class="traveler-trail"></span>
+                </div>
+
+                <!-- Milestones: edit year / text below to match your real story -->
+                <div class="milestone" data-level="0" data-year="2020" data-title-en="Zero" data-title-id="Nol">
+                    <div class="milestone-node"><i class="fas fa-seedling"></i></div>
+                    <div class="milestone-card">
+                        <div class="milestone-meta"><span class="milestone-year">2020</span><span class="milestone-lv">LV 0</span></div>
+                        <h3><span data-lang="en">Starting from Zero</span><span data-lang="id">Mulai dari Nol</span></h3>
+                        <p><span data-lang="en">No title, no clients — just curiosity, a laptop, and a lot of coffee. Learned self-taught: how computers, networks, and code work.</span><span data-lang="id">Tanpa gelar, tanpa klien — hanya rasa penasaran, laptop, dan banyak kopi. Belajar otodidak: cara kerja komputer, jaringan, dan kode.</span></p>
+                        <div class="milestone-unlock"><span class="unlock-label"><i class="fas fa-unlock"></i> <span data-lang="en">Unlocked</span><span data-lang="id">Terbuka</span></span><span>HTML</span><span>Python</span><span>Linux</span></div>
+                    </div>
+                </div>
+
+                <div class="milestone" data-level="1" data-year="2021" data-title-en="IT Support & Network" data-title-id="IT Support & Jaringan">
+                    <div class="milestone-node"><i class="fas fa-network-wired"></i></div>
+                    <div class="milestone-card">
+                        <div class="milestone-meta"><span class="milestone-year">2021</span><span class="milestone-lv">LV 1</span></div>
+                        <h3><span data-lang="en">IT Support & Networking</span><span data-lang="id">IT Support & Jaringan</span></h3>
+                        <p><span data-lang="en">First real job: keeping offices online. Routers, Wi-Fi, VPN, troubleshooting — learning that every problem has a root cause.</span><span data-lang="id">Pekerjaan nyata pertama: menjaga kantor tetap online. Router, Wi-Fi, VPN, troubleshooting — belajar bahwa setiap masalah punya akar penyebab.</span></p>
+                        <div class="milestone-unlock"><span class="unlock-label"><i class="fas fa-unlock"></i> <span data-lang="en">Unlocked</span><span data-lang="id">Terbuka</span></span><span>MikroTik</span><span>Ruijie</span><span>ZeroTier</span><span>VPN</span></div>
+                    </div>
+                </div>
+
+                <div class="milestone" data-level="2" data-year="2022" data-title-en="Maritime & IoT Engineer" data-title-id="Engineer Maritim & IoT">
+                    <div class="milestone-node"><i class="fas fa-satellite-dish"></i></div>
+                    <div class="milestone-card">
+                        <div class="milestone-meta"><span class="milestone-year">2022</span><span class="milestone-lv">LV 2</span></div>
+                        <h3><span data-lang="en">Maritime & IoT Engineering</span><span data-lang="id">Engineering Maritim & IoT</span></h3>
+                        <p><span data-lang="en">Connecting ships at sea: satellite links, vessel CCTV, IoT devices, and firmware. Systems that must work even in the middle of the ocean.</span><span data-lang="id">Menghubungkan kapal di laut: link satelit, CCTV kapal, perangkat IoT, dan firmware. Sistem yang harus tetap jalan di tengah samudra.</span></p>
+                        <div class="milestone-unlock"><span class="unlock-label"><i class="fas fa-unlock"></i> <span data-lang="en">Unlocked</span><span data-lang="id">Terbuka</span></span><span>Starlink</span><span>Satellite IoT</span><span>Arduino</span><span>CCTV</span></div>
+                    </div>
+                </div>
+
+                <div class="milestone" data-level="3" data-year="2023" data-title-en="Systems & Monitoring" data-title-id="Sistem & Monitoring">
+                    <div class="milestone-node"><i class="fas fa-gauge-high"></i></div>
+                    <div class="milestone-card">
+                        <div class="milestone-meta"><span class="milestone-year">2023</span><span class="milestone-lv">LV 3</span></div>
+                        <h3><span data-lang="en">GPS, Fuel & RPM Monitoring</span><span data-lang="id">Monitoring GPS, BBM & RPM</span></h3>
+                        <p><span data-lang="en">From hardware to dashboards: real-time GPS tracking, fuel-level and engine RPM monitoring, servers, and databases that never sleep.</span><span data-lang="id">Dari hardware ke dashboard: GPS tracking real-time, monitoring level BBM dan RPM mesin, server, dan database yang tidak pernah tidur.</span></p>
+                        <div class="milestone-unlock"><span class="unlock-label"><i class="fas fa-unlock"></i> <span data-lang="en">Unlocked</span><span data-lang="id">Terbuka</span></span><span>PostgreSQL</span><span>Docker</span><span>VPS</span><span>Telemetry</span></div>
+                    </div>
+                </div>
+
+                <div class="milestone" data-level="4" data-year="2024" data-title-en="Full-Stack Developer" data-title-id="Full-Stack Developer">
+                    <div class="milestone-node"><i class="fas fa-layer-group"></i></div>
+                    <div class="milestone-card">
+                        <div class="milestone-meta"><span class="milestone-year">2024</span><span class="milestone-lv">LV 4</span></div>
+                        <h3><span data-lang="en">Full-Stack & First Clients</span><span data-lang="id">Full-Stack & Klien Pertama</span></h3>
+                        <p><span data-lang="en">Web apps, APIs, mobile apps, and WhatsApp notification systems. First freelance clients — and the first 5-star reviews.</span><span data-lang="id">Web app, API, aplikasi mobile, dan sistem notifikasi WhatsApp. Klien freelance pertama — dan ulasan bintang 5 pertama.</span></p>
+                        <div class="milestone-unlock"><span class="unlock-label"><i class="fas fa-unlock"></i> <span data-lang="en">Unlocked</span><span data-lang="id">Terbuka</span></span><span>Laravel</span><span>Vue.js</span><span>FastAPI</span><span>REST API</span></div>
+                    </div>
+                </div>
+
+                <div class="milestone" data-level="5" data-year="2025" data-title-en="AI & Automation" data-title-id="AI & Otomatisasi">
+                    <div class="milestone-node"><i class="fas fa-robot"></i></div>
+                    <div class="milestone-card">
+                        <div class="milestone-meta"><span class="milestone-year">2025</span><span class="milestone-lv">LV 5</span></div>
+                        <h3><span data-lang="en">AI Agents & Automation</span><span data-lang="id">AI Agent & Otomatisasi</span></h3>
+                        <p><span data-lang="en">Camera AI, chatbots, and agentic workflows that run businesses on autopilot — engineering plus intelligence.</span><span data-lang="id">Kamera AI, chatbot, dan alur kerja agentic yang menjalankan bisnis secara otomatis — engineering ditambah kecerdasan.</span></p>
+                        <div class="milestone-unlock"><span class="unlock-label"><i class="fas fa-unlock"></i> <span data-lang="en">Unlocked</span><span data-lang="id">Terbuka</span></span><span>AI Agent</span><span>Computer Vision</span><span>LLM API</span></div>
+                    </div>
+                </div>
+
+                <div class="milestone milestone-now" data-level="6" data-year="2026" data-title-en="Freelance Engineer" data-title-id="Freelance Engineer">
+                    <div class="milestone-node"><i class="fas fa-rocket"></i></div>
+                    <div class="milestone-card">
+                        <div class="milestone-meta"><span class="milestone-year"><span data-lang="en">NOW</span><span data-lang="id">SEKARANG</span></span><span class="milestone-lv">LV 6</span></div>
+                        <h3><span data-lang="en">Freelance Engineer — Ready for You</span><span data-lang="id">Freelance Engineer — Siap untuk Anda</span></h3>
+                        <p><span data-lang="en">Hardware to cloud, network to AI. All of that experience is now available for your project — remote, flexible, and end-to-end.</span><span data-lang="id">Dari hardware sampai cloud, jaringan sampai AI. Semua pengalaman itu kini siap untuk proyek Anda — remote, fleksibel, dan end-to-end.</span></p>
+                        <a href="#contact" class="btn btn-primary milestone-cta"><span data-lang="en">Be My Next Level</span><span data-lang="id">Jadi Level Berikutnya</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -302,6 +417,93 @@
         </div>
     </section>
 
+    <!-- FEATURED CASE STUDY: FUEL & ENGINE MONITORING -->
+    <section class="section featured" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><span data-lang="en">Featured Project</span><span data-lang="id">Proyek Unggulan</span></span>
+                <h2 class="section-title"><span data-lang="en">Fuel & Engine Monitoring for Vessels</span><span data-lang="id">Monitoring BBM & Mesin Kapal</span></h2>
+                <p class="section-subtitle"><span data-lang="en">A real system I built and deliver: satellite-connected fleet monitoring that shows fuel tanks, engine RPM, consumption, and alerts in one dashboard.</span><span data-lang="id">Sistem nyata yang saya bangun dan jalankan: monitoring armada via satelit yang menampilkan tangki BBM, RPM mesin, konsumsi, dan alert dalam satu dashboard.</span></p>
+            </div>
+
+            <div class="featured-grid">
+                <!-- Screenshot gallery in a browser frame -->
+                <div class="featured-gallery">
+                    <div class="browser-frame">
+                        <div class="browser-bar">
+                            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+                            <span class="browser-url"><i class="fas fa-lock"></i> vms-monitor / <span id="fgUrl">fuel-tank</span></span>
+                        </div>
+                        <div class="browser-screen" id="fgScreen">
+                            <img src="assets/vms-fuel-tank.webp" alt="Dual engine RPM and fuel tank levels dashboard" class="active" data-key="fuel-tank">
+                            <img src="assets/vms-engine.webp" alt="Engine monitor: RPM, temperature, oil pressure, vibration" data-key="engine-monitor" loading="lazy">
+                            <img src="assets/vms-consumption.webp" alt="Fuel consumption chart per vessel" data-key="consumption" loading="lazy">
+                            <img src="assets/vms-report.webp" alt="Fuel and engine hour report with CSV export" data-key="report" loading="lazy">
+                            <img src="assets/vms-alerts.webp" alt="Alerts: fuel leak, geo-fence, engine maintenance" data-key="alerts" loading="lazy">
+                            <div class="screen-progress"><span id="fgProgress"></span></div>
+                        </div>
+                    </div>
+                    <div class="featured-tabs" id="fgTabs" role="tablist">
+                        <button class="fg-tab active" data-idx="0"><i class="fas fa-gas-pump"></i><span data-lang="en">Fuel Tanks</span><span data-lang="id">Tangki BBM</span></button>
+                        <button class="fg-tab" data-idx="1"><i class="fas fa-gears"></i><span data-lang="en">Engine</span><span data-lang="id">Mesin</span></button>
+                        <button class="fg-tab" data-idx="2"><i class="fas fa-chart-line"></i><span data-lang="en">Consumption</span><span data-lang="id">Konsumsi</span></button>
+                        <button class="fg-tab" data-idx="3"><i class="fas fa-file-lines"></i><span data-lang="en">Report</span><span data-lang="id">Laporan</span></button>
+                        <button class="fg-tab" data-idx="4"><i class="fas fa-bell"></i><span data-lang="en">Alerts</span><span data-lang="id">Alert</span></button>
+                    </div>
+                </div>
+
+                <!-- Story + live widget -->
+                <div class="featured-info">
+                    <div class="live-panel" id="livePanel" aria-label="Live engine and fuel simulation">
+                        <div class="live-head">
+                            <span class="live-dot"></span><span>LIVE</span>
+                            <span class="live-vessel">KM Demo · Engine #1</span>
+                        </div>
+                        <div class="live-body">
+                            <div class="live-gauge">
+                                <svg viewBox="0 0 200 130" aria-hidden="true">
+                                    <defs>
+                                        <linearGradient id="gaugeGrad" x1="0" x2="1">
+                                            <stop offset="0" stop-color="#22c55e"/><stop offset="0.6" stop-color="#fbbf24"/><stop offset="1" stop-color="#ef4444"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M20 110 A80 80 0 0 1 180 110" fill="none" stroke="rgba(148,163,184,0.18)" stroke-width="14" stroke-linecap="round"/>
+                                    <path d="M20 110 A80 80 0 0 1 180 110" fill="none" stroke="url(#gaugeGrad)" stroke-width="14" stroke-linecap="round" pathLength="100" stroke-dasharray="100" id="gaugeArc"/>
+                                    <g id="gaugeNeedle" style="transform-origin:100px 110px">
+                                        <line x1="100" y1="110" x2="100" y2="42" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+                                    </g>
+                                    <circle cx="100" cy="110" r="7" fill="currentColor"/>
+                                </svg>
+                                <div class="live-rpm"><span id="liveRpm">0</span><small>RPM</small></div>
+                            </div>
+                            <div class="live-tank">
+                                <div class="tank"><div class="tank-fill" id="tankFill" style="height:78%"><span class="wave"></span></div></div>
+                                <div class="live-tank-val"><span id="liveFuel">0</span><small>% <span data-lang="en">fuel</span><span data-lang="id">BBM</span></small></div>
+                            </div>
+                        </div>
+                        <div class="live-stats">
+                            <div><small><span data-lang="en">Fuel rate</span><span data-lang="id">Laju BBM</span></small><b id="liveRate">0</b> L/h</div>
+                            <div><small><span data-lang="en">Temp</span><span data-lang="id">Suhu</span></small><b id="liveTemp">0</b> °C</div>
+                            <div><small><span data-lang="en">Speed</span><span data-lang="id">Kecepatan</span></small><b id="liveSpeed">0</b> kn</div>
+                        </div>
+                        <svg class="live-spark" viewBox="0 0 300 50" preserveAspectRatio="none" aria-hidden="true"><polyline id="liveSpark" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+
+                    <ul class="featured-points">
+                        <li><i class="fas fa-gas-pump"></i><div><b><span data-lang="en">Multi-tank fuel levels</span><span data-lang="id">Level BBM multi-tangki</span></b><span data-lang="en">Capacity, stock, and minimum-stock warning per tank.</span><span data-lang="id">Kapasitas, stok, dan peringatan stok minimum per tangki.</span></div></li>
+                        <li><i class="fas fa-gauge-high"></i><div><b><span data-lang="en">Dual engine RPM & health</span><span data-lang="id">RPM & kondisi dual engine</span></b><span data-lang="en">RPM with gear-ratio calibration, temperature, oil pressure, vibration.</span><span data-lang="id">RPM dengan kalibrasi rasio gear, suhu, tekanan oli, getaran.</span></div></li>
+                        <li><i class="fas fa-chart-column"></i><div><b><span data-lang="en">Consumption & cost reports</span><span data-lang="id">Laporan konsumsi & biaya</span></b><span data-lang="en">Daily litres, engine hours, cost estimate, CSV export.</span><span data-lang="id">Liter per hari, jam mesin, estimasi biaya, export CSV.</span></div></li>
+                        <li><i class="fas fa-satellite"></i><div><b><span data-lang="en">Satellite tracking & alerts</span><span data-lang="id">Tracking satelit & alert</span></b><span data-lang="en">Position, geo-fence, route history, fuel-leak and maintenance alerts.</span><span data-lang="id">Posisi, geo-fence, riwayat rute, alert kebocoran BBM & maintenance.</span></div></li>
+                    </ul>
+                    <div class="portfolio-tech featured-tech">
+                        <span>Python</span><span>REST API</span><span>PostgreSQL</span><span>Chart.js</span><span>Leaflet</span><span>Satellite IoT</span><span>Flutter</span>
+                    </div>
+                    <a href="https://wa.me/6287883222361?text=Halo%20Habib%2C%20saya%20tertarik%20dengan%20sistem%20Fuel%20%26%20Engine%20Monitoring%20Anda" target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp"></i><span data-lang="en">Want this for your fleet?</span><span data-lang="id">Mau sistem ini untuk armada Anda?</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- PORTFOLIO -->
     <section class="section portfolio" id="portfolio">
         <div class="container">
@@ -310,9 +512,218 @@
                 <h2 class="section-title"><span data-lang="en">Project Highlights</span><span data-lang="id">Proyek Unggulan</span></h2>
                 <p class="section-subtitle"><span data-lang="en">Real projects I've built with dedication.</span><span data-lang="id">Proyek nyata yang saya kerjakan dengan dedikasi.</span></p>
             </div>
+            <div class="portfolio-filters" id="portfolioFilters">
+                <button class="pf-btn active" data-filter="all"><span data-lang="en">All</span><span data-lang="id">Semua</span></button>
+                <button class="pf-btn" data-filter="maritime"><i class="fas fa-ship"></i> <span data-lang="en">Maritime & IoT</span><span data-lang="id">Maritim & IoT</span></button>
+                <button class="pf-btn" data-filter="iot"><i class="fas fa-microchip"></i> <span data-lang="en">IoT & Smart Home</span><span data-lang="id">IoT & Smart Home</span></button>
+                <button class="pf-btn" data-filter="web"><i class="fas fa-laptop-code"></i> <span data-lang="en">Web & Dashboard</span><span data-lang="id">Web & Dashboard</span></button>
+                <button class="pf-btn" data-filter="ai"><i class="fas fa-robot"></i> <span data-lang="en">AI & Automation</span><span data-lang="id">AI & Otomatisasi</span></button>
+            </div>
             <div class="portfolio-grid">
 
-                <div class="portfolio-card">
+                <div class="portfolio-card" data-cat="maritime">
+                    <div class="portfolio-cover">
+                        <img src="assets/vms-engine.webp" alt="Engine Monitoring" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://wa.me/6287883222361?text=Halo%20Habib%2C%20saya%20tertarik%20dengan%20proyek%20Engine%20Monitoring%20Anda" class="portfolio-action wa-action" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="mailto:asmaulhabib378@gmail.com?subject=Tertarik%20dengan%20proyek%20Engine%20Monitoring" class="portfolio-action mail-action" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Engine Monitoring</span>
+                        <h3><span data-lang="en">Engine Monitoring</span><span data-lang="id">Monitoring Mesin</span></h3>
+                        <p><span data-lang="en">Live RPM, temperature, oil pressure & vibration for dual engines.</span><span data-lang="id">RPM, suhu, tekanan oli & getaran dual engine secara live.</span></p>
+                        <div class="portfolio-result"><i class="fas fa-check-circle"></i> RPM Trend · Health · Alerts</div>
+                        <div class="portfolio-tech">
+                            <span>Python</span><span>Chart.js</span><span>REST API</span><span>IoT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-cat="maritime">
+                    <div class="portfolio-cover">
+                        <img src="assets/vms-consumption.webp" alt="Fuel Consumption Analytics" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://wa.me/6287883222361?text=Halo%20Habib%2C%20saya%20tertarik%20dengan%20proyek%20Fuel%20Monitoring%20Anda" class="portfolio-action wa-action" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="mailto:asmaulhabib378@gmail.com?subject=Tertarik%20dengan%20proyek%20Fuel%20Monitoring" class="portfolio-action mail-action" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Fuel Monitoring</span>
+                        <h3><span data-lang="en">Fuel Consumption Analytics</span><span data-lang="id">Analitik Konsumsi BBM</span></h3>
+                        <p><span data-lang="en">Daily fuel usage per vessel, cost estimate, and reports.</span><span data-lang="id">Pemakaian BBM harian per kapal, estimasi biaya, dan laporan.</span></p>
+                        <div class="portfolio-result"><i class="fas fa-check-circle"></i> Per Vessel · Cost · CSV</div>
+                        <div class="portfolio-tech">
+                            <span>Python</span><span>PostgreSQL</span><span>Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-cat="maritime">
+                    <div class="portfolio-cover">
+                        <img src="assets/marine-cctv.webp" alt="Marine Vessel CCTV" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://wa.me/6287883222361?text=Halo%20Habib%2C%20saya%20tertarik%20dengan%20proyek%20Marine%20CCTV%20Anda" class="portfolio-action wa-action" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="mailto:asmaulhabib378@gmail.com?subject=Tertarik%20dengan%20proyek%20Marine%20CCTV" class="portfolio-action mail-action" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">CCTV</span>
+                        <h3><span data-lang="en">Marine Vessel CCTV</span><span data-lang="id">CCTV Kapal (Marine)</span></h3>
+                        <p><span data-lang="en">Multi-camera monitoring over satellite: live view, playback, map.</span><span data-lang="id">Monitoring multi-kamera via satelit: live view, playback, peta.</span></p>
+                        <div class="portfolio-result"><i class="fas fa-check-circle"></i> Live · Playback · Vessel Map</div>
+                        <div class="portfolio-tech">
+                            <span>React</span><span>Streaming</span><span>Satellite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-cat="ai">
+                    <div class="portfolio-cover">
+                        <img src="assets/auto-reminder.webp" alt="WhatsApp & Email Auto-Reminder" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://wa.me/6287883222361?text=Halo%20Habib%2C%20saya%20tertarik%20dengan%20proyek%20Auto%20Reminder%20Anda" class="portfolio-action wa-action" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="mailto:asmaulhabib378@gmail.com?subject=Tertarik%20dengan%20proyek%20Auto%20Reminder" class="portfolio-action mail-action" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Automation</span>
+                        <h3><span data-lang="en">WhatsApp & Email Auto-Reminder</span><span data-lang="id">Auto-Reminder WhatsApp & Email</span></h3>
+                        <p><span data-lang="en">Engine that checks the fleet and sends notifications automatically.</span><span data-lang="id">Engine yang mengecek armada dan mengirim notifikasi otomatis.</span></p>
+                        <div class="portfolio-result"><i class="fas fa-check-circle"></i> Rules · WA + Email · Logs</div>
+                        <div class="portfolio-tech">
+                            <span>Python</span><span>WhatsApp API</span><span>Scheduler</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-cat="maritime">
+                    <div class="portfolio-cover cover-art">
+                        <div class="art art-mobile"><i class="fas fa-mobile-screen-button"></i><span>Flutter</span></div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://wa.me/6287883222361?text=Halo%20Habib%2C%20saya%20tertarik%20dengan%20proyek%20Mobile%20Vessel%20Tracking%20Anda" class="portfolio-action wa-action" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="mailto:asmaulhabib378@gmail.com?subject=Tertarik%20dengan%20proyek%20Mobile%20Vessel%20Tracking" class="portfolio-action mail-action" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Mobile App</span>
+                        <h3><span data-lang="en">Mobile Vessel Tracking</span><span data-lang="id">Aplikasi Mobile Tracking Kapal</span></h3>
+                        <p><span data-lang="en">Android app to track vessels, fuel and engine status on the go.</span><span data-lang="id">Aplikasi Android untuk memantau posisi kapal, BBM & mesin di mana saja.</span></p>
+                        <div class="portfolio-result"><i class="fas fa-check-circle"></i> Android · Map · Notifications</div>
+                        <div class="portfolio-tech">
+                            <span>Flutter</span><span>Dart</span><span>REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-cat="maritime">
+                    <div class="portfolio-cover cover-art">
+                        <div class="art art-sat"><i class="fas fa-satellite"></i><span>Lua · Satellite IoT</span></div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://wa.me/6287883222361?text=Halo%20Habib%2C%20saya%20tertarik%20dengan%20proyek%20Satellite%20IoT%20Anda" class="portfolio-action wa-action" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="mailto:asmaulhabib378@gmail.com?subject=Tertarik%20dengan%20proyek%20Satellite%20IoT" class="portfolio-action mail-action" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">IoT Firmware</span>
+                        <h3><span data-lang="en">Satellite IoT Terminal Scripting</span><span data-lang="id">Scripting Terminal IoT Satelit</span></h3>
+                        <p><span data-lang="en">Lua scripts on satellite terminals: read sensors, RPM & fuel, send data.</span><span data-lang="id">Script Lua di terminal satelit: baca sensor, RPM & BBM, kirim data.</span></p>
+                        <div class="portfolio-result"><i class="fas fa-check-circle"></i> Sensors · RPM · Fuel · Uplink</div>
+                        <div class="portfolio-tech">
+                            <span>Lua</span><span>Satellite</span><span>Serial/IO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-cat="iot">
+                    <div class="portfolio-cover cover-art">
+                        <div class="art art-pond">
+                            <div class="pond-water"><span class="fish">🐟</span><span class="fish f2">🐠</span><span class="bubble b1"></span><span class="bubble b2"></span><span class="bubble b3"></span></div>
+                            <div class="sensor-chips"><span>pH <b>7.2</b></span><span>DO <b>5.8</b></span><span>🌡 <b>28°C</b></span></div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://wa.me/6287883222361?text=Halo%20Habib%2C%20saya%20tertarik%20dengan%20proyek%20Monitoring%20Tambak%20Anda" class="portfolio-action wa-action" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="mailto:asmaulhabib378@gmail.com?subject=Tertarik%20dengan%20proyek%20Monitoring%20Tambak" class="portfolio-action mail-action" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Aquaculture IoT</span>
+                        <h3><span data-lang="en">Fish Pond Monitoring (Tambak)</span><span data-lang="id">Monitoring Tambak Ikan</span></h3>
+                        <p><span data-lang="en">Real-time pH, dissolved oxygen & water temperature per pond, with alerts and aerator/pump control.</span><span data-lang="id">Monitoring pH, oksigen terlarut (DO) & suhu air per kolam secara real-time, dengan alert dan kontrol aerator/pompa.</span></p>
+                        <div class="portfolio-result"><i class="fas fa-check-circle"></i> Sensors · Alerts · Device Control</div>
+                        <div class="portfolio-tech">
+                            <span>ESP32</span><span>Node.js</span><span>Socket.IO</span><span>Vue.js</span><span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-cat="iot">
+                    <div class="portfolio-cover cover-art">
+                        <div class="art art-home">
+                            <i class="fas fa-house-signal"></i>
+                            <div class="cam-grid"><span></span><span></span><span></span><span></span></div>
+                            <span class="rec"><i></i>REC</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://wa.me/6287883222361?text=Halo%20Habib%2C%20saya%20tertarik%20dengan%20proyek%20Smart%20Home%20CCTV%20Anda" class="portfolio-action wa-action" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="mailto:asmaulhabib378@gmail.com?subject=Tertarik%20dengan%20proyek%20Smart%20Home%20CCTV" class="portfolio-action mail-action" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Smart Home</span>
+                        <h3><span data-lang="en">Smart Home CCTV</span><span data-lang="id">Smart Home CCTV</span></h3>
+                        <p><span data-lang="en">IP camera setup with remote live view, motion alerts to phone, and recording.</span><span data-lang="id">Instalasi kamera IP dengan live view jarak jauh, notifikasi gerakan ke HP, dan rekaman.</span></p>
+                        <div class="portfolio-result"><i class="fas fa-check-circle"></i> Live View · Motion Alert · Recording</div>
+                        <div class="portfolio-tech">
+                            <span>IP Camera</span><span>NVR</span><span>Remote Access</span><span>Smart Home</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-cat="iot">
+                    <div class="portfolio-cover cover-art">
+                        <div class="art art-iot">
+                            <i class="fas fa-microchip"></i>
+                            <span class="node n1"><i class="fas fa-temperature-half"></i></span>
+                            <span class="node n2"><i class="fas fa-lightbulb"></i></span>
+                            <span class="node n3"><i class="fas fa-fan"></i></span>
+                            <span class="node n4"><i class="fas fa-cloud"></i></span>
+                            <span>ESP32 · MQTT</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://wa.me/6287883222361?text=Halo%20Habib%2C%20saya%20tertarik%20dengan%20proyek%20Sistem%20IoT%20Anda" class="portfolio-action wa-action" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="mailto:asmaulhabib378@gmail.com?subject=Tertarik%20dengan%20proyek%20Sistem%20IoT" class="portfolio-action mail-action" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">IoT System</span>
+                        <h3><span data-lang="en">IoT System & Dashboard</span><span data-lang="id">Sistem IoT & Dashboard</span></h3>
+                        <p><span data-lang="en">End-to-end IoT: sensors and microcontrollers, data to cloud, dashboard, and automation.</span><span data-lang="id">IoT end-to-end: sensor & mikrokontroler, data ke cloud, dashboard, dan otomatisasi.</span></p>
+                        <div class="portfolio-result"><i class="fas fa-check-circle"></i> Device · Cloud · Dashboard · Automation</div>
+                        <div class="portfolio-tech">
+                            <span>ESP32</span><span>Arduino</span><span>MQTT</span><span>REST API</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-cat="maritime">
                     <div class="portfolio-cover">
                         <img src="assets/portfolio-4.png" alt="GPS Tracking System" loading="lazy">
                         <div class="portfolio-overlay">
@@ -333,7 +744,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio-card">
+                <div class="portfolio-card" data-cat="web">
                     <div class="portfolio-cover">
                         <img src="assets/portfolio-5.png" alt="Online Shop" loading="lazy">
                         <div class="portfolio-overlay">
@@ -354,7 +765,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio-card">
+                <div class="portfolio-card" data-cat="web">
                     <div class="portfolio-cover">
                         <img src="assets/portfolio-2.png" alt="CRM System" loading="lazy">
                         <div class="portfolio-overlay">
@@ -375,7 +786,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio-card">
+                <div class="portfolio-card" data-cat="web">
                     <div class="portfolio-cover">
                         <img src="assets/portfolio-1.png" alt="Business Dashboard" loading="lazy">
                         <div class="portfolio-overlay">
@@ -396,7 +807,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio-card">
+                <div class="portfolio-card" data-cat="ai">
                     <div class="portfolio-cover">
                         <img src="assets/portfolio-6.png" alt="AI Agentic E-Commerce" loading="lazy">
                         <div class="portfolio-overlay">
@@ -417,7 +828,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio-card">
+                <div class="portfolio-card" data-cat="web">
                     <div class="portfolio-cover">
                         <img src="assets/portfolio-3.png" alt="API Integration" loading="lazy">
                         <div class="portfolio-overlay">
@@ -596,6 +1007,7 @@
                 </div>
                 <div class="footer-links">
                     <h4><span data-lang="en">Navigation</span><span data-lang="id">Navigasi</span></h4>
+                    <a href="#journey"><span data-lang="en">Journey</span><span data-lang="id">Perjalanan</span></a>
                     <a href="#services"><span data-lang="en">Services</span><span data-lang="id">Layanan</span></a>
                     <a href="#portfolio"><span data-lang="en">Portfolio</span><span data-lang="id">Portofolio</span></a>
                     <a href="#order"><span data-lang="en">How to Order</span><span data-lang="id">Cara Pesan</span></a>
@@ -614,6 +1026,6 @@
         </div>
     </footer>
 
-    <script src="script.js?v=6"></script>
+    <script src="script.js?v=10"></script>
 </body>
 </html>
