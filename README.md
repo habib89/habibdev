@@ -5,7 +5,10 @@ Website portfolio freelance IT Developer (single-page, statis) dengan:
 - Tema hijau tua (dark) + toggle light
 - Bilingual **EN / ID** (default English, tersimpan di localStorage)
 - Animasi: kartun developer, typed role, counters, reveal, tilt, scroll progress
-- 6 jasa IT, 6 project portfolio (Project Highlights), cara pemesanan 4 langkah, form kontak → WhatsApp
+- **Perjalanan Karir** — timeline animasi dari nol sampai sekarang (scroll-driven, level-up HUD). Edit milestone di blok `<div class="milestone" ...>` pada `index.html`
+- **Featured: Fuel & Engine Monitoring (VMS Monitor)** — galeri screenshot ber-tab + widget live (gauge RPM, tangki BBM, sparkline)
+- 6 jasa IT, 12 project portfolio dengan filter kategori (Maritim & IoT / Web / AI) + lightbox gambar
+- Cara pemesanan 4 langkah, form kontak → WhatsApp
 - Kontak: WhatsApp, Email (placeholder — ganti dengan kontak asli Anda)
 
 ---
@@ -17,7 +20,7 @@ portopolio/
 ├── index.html       → halaman utama (semua konten di sini)
 ├── styles.css       → styling & tema (hijau tua + light)
 ├── script.js        → animasi, toggle bahasa/tema, form → WhatsApp
-├── assets/          → gambar portfolio (portfolio-1.png s.d. portfolio-6.png)
+├── assets/          → gambar portfolio (portfolio-*.png, vms-*.webp, marine-cctv.webp, auto-reminder.webp)
 ├── serve_https.py   → (opsional) server HTTPS lokal untuk testing
 ├── start.sh         → script menjalankan server HTTPS lokal
 ├── vercel.json      → konfigurasi deploy ke Vercel
